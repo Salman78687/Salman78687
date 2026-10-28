@@ -1,23 +1,12 @@
 <p align="center">
-  <img
-    src="assets/terminal-profile.svg"
-    width="800"
-    alt="Salman Javed - AI Engineer animated terminal"
-  />
+  <img src="terminal-profile.svg" width="800" alt="Salman Javed - AI Engineer animated terminal" />
 </p>
+
 
 <h1 align="center">Hi, I'm Salman</h1>
 
 <h3 align="center">AI Engineer | LLM Agents | RAG Systems</h3>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=8E2DFF&center=true&vCenter=true&width=650&lines=Building+Production+LLM+Agents;Engineering+Reliable+RAG+Systems;Making+AI+More+Predictable+and+Safe;Python+%7C+FastAPI+%7C+Docker+%7C+AWS" alt="Typing SVG" />
-</p>
-
-
-# Hi, I'm Salman
-
-<h3 align="center">AI Engineer | LLM Agents | RAG Systems</h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=8E2DFF&center=true&vCenter=true&width=650&lines=Building+Production+LLM+Agents;Engineering+Reliable+RAG+Systems;Making+AI+More+Predictable+and+Safe;Python+%7C+FastAPI+%7C+Docker+%7C+AWS" alt="Typing SVG" />
@@ -37,7 +26,7 @@
 
 ## About Me
 
-I'm an **AI Engineer at SIRP**, building production-ready LLM agents and retrieval-augmented generation (RAG) systems for security operations.
+I'm an **AI Engineer**, building production-ready LLM agents and retrieval-augmented generation (RAG) systems for security operations.
 
 I focus on making AI systems reliable, measurable, and safe for real-world use.
 

@@ -74,41 +74,60 @@ I focus on making AI systems reliable, measurable, and safe for real-world use.
   <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure" />
 </p>
 
-## Featured Projects
+## 🚀 Featured Projects
 
-### 1. [ARGUS — AI Support Co-Analyst](https://github.com/Salman78687/ARGUS)
+### 1. [RAGantine — Defending RAG Against Knowledge-Base Poisoning](https://github.com/Salman78687/RAGantine)
 
-**Python · FastAPI · vLLM · OpenSearch · PostgreSQL**
+**Python · LangGraph · OpenSearch · FastAPI · DeBERTa · Docker**
 
-- Built an end-to-end RAG assistant answering support questions using product documentation and live operational data.
-- Served Llama 4 using a self-hosted vLLM server with an OpenAI-compatible API.
-- Implemented PDF ingestion, semantic chunking, embeddings, and OpenSearch k-NN retrieval.
-- Logged retrieval scores to trace answer failures to retrieval or generation.
-- Added multi-turn sessions, SSE streaming, and health checks.
-- Tuned retrieval thresholds and top-k settings to improve answer quality and reduce hallucinations.
+- Built a benchmark that plants poisoned documents in a Wikipedia corpus across six attack types and measures how often they change the model's answer.
+- Designed layered defenses: an ingestion sanitizer, an injection classifier, source-trust re-ranking, spotlighting, cross-source NLI checks, and a retrieval anomaly detector.
+- Undefended, poisoned documents won **52–70%** of attacked questions. The full defense stack cut that to **6–9%**.
+- Spotlighting alone dropped the attack success rate to ~10–14% while keeping clean accuracy at **100%**.
+- Moves flagged chunks into a human-reviewable quarantine instead of deleting them. Also tested defenses against an adaptive attacker.
+
+[Explore RAGantine →](https://github.com/Salman78687/RAGantine)
+
+### 2. [ARGUS — Self-Hosted AI Support Assistant](https://github.com/Salman78687/ARGUS)
+
+**Python · Flask · ChromaDB · PostgreSQL · vLLM / OpenAI-compatible LLMs**
+
+- Built a RAG assistant that answers support questions from PDF documentation, with optional live context from PostgreSQL.
+- Embeds PDFs with sentence-transformers and retrieves from ChromaDB, with tuned top-k and similarity thresholds to filter weak matches.
+- Runs keyword-triggered, read-only SQL to pull recent errors, job runs and audit events into the prompt.
+- Works with any OpenAI-compatible endpoint (vLLM, Ollama, OpenAI). Defaults to Llama 4 Scout.
+- Streams answers token by token over SSE, with multi-turn sessions, visible reasoning steps and voice input/output.
 
 [Explore ARGUS →](https://github.com/Salman78687/ARGUS)
 
-### 2. [CodeCrate — Secure Code Execution Platform](https://github.com/Salman78687/CodeCrate)
+### 3. [CodeCrate — Secure Code Execution Platform](https://github.com/Salman78687/CodeCrate)
 
-**Python · Docker · GitHub Actions · AWS**
+**Python · FastAPI · React · Docker**
 
-- Built a sandboxed, multi-language code execution platform.
-- Isolated code submissions in Docker containers to protect the host environment and other execution jobs.
-- Designed REST APIs for code submission, execution, and result retrieval.
-- Automated testing, Docker image builds, and AWS EC2 deployments using GitHub Actions CI/CD.
+- Built a self-hosted online IDE that runs Python, JavaScript, Java, C++ and Go in disposable Docker containers.
+- Hardened every run: no network, read-only filesystem, non-root user, all capabilities dropped, plus CPU, memory, PID and timeout limits.
+- Passes code to the sandbox base64-encoded so it never touches a shell command.
+- Exposes REST APIs for execution, language listing, health checks and run metrics, plus a Monaco-based browser editor.
 
 [Explore CodeCrate →](https://github.com/Salman78687/CodeCrate)
 
-### 3. Catalyst1122 — AI-Powered HR System
+### 4. [ReconReach — OSINT-Powered Outreach Assistant](https://github.com/Salman78687/reconreach)
 
-**Role:** Lead Full-Stack Developer
+**Python · FastAPI · asyncio · React · TypeScript · Docker**
 
-**.NET Web API · Machine Learning**
+- Enriches leads by querying 7+ public data sources at the same time with asyncio.
+- Uses any OpenAI-compatible LLM to draft personalized emails, call scripts and LinkedIn messages from each enriched profile.
+- Works on a free tier with no paid API keys, with optional paid integrations.
 
-- Led development of an HR management system for Rescue1122.
-- Integrated résumé parsing, face-recognition-based attendance, and an HR chatbot.
-- Reduced manual HR processing time by 40%, as documented in my project experience.
+[Explore ReconReach →](https://github.com/Salman78687/reconreach)
+
+### 5. Catalyst1122 — AI-Powered HR System *(private)*
+
+**Role:** Lead Full-Stack Developer · **.NET Web API · Machine Learning**
+
+- Led development of an HR management system for Rescue 1122.
+- Integrated résumé parsing, face-recognition attendance and an HR chatbot.
+- Cut manual HR processing time by 40%.
 
 ## Professional Experience
 

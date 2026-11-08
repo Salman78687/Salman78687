@@ -74,7 +74,7 @@ I focus on making AI systems reliable, measurable, and safe for real-world use.
   <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure" />
 </p>
 
-## 🚀 Featured Projects
+## Featured Projects
 
 ### 1. [RAGantine — Defending RAG Against Knowledge-Base Poisoning](https://github.com/Salman78687/RAGantine)
 
